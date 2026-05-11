@@ -2,7 +2,7 @@
 
 ## Session Setup
 
-- **Presenters**: Presenter A and Presenter B  
+- **Presenters**: Presenter A and Kevin M  
 - **Demo Repo**: https://github.com/yortch/ (pick or create a repo like `github-ado-workshop`)
 - **ADO Reference**: https://dev.azure.com/octodemo-msft/msft-common-demos-adogh-crispy-carnival/
 - **Duration**: 90 minutes total
