@@ -1,34 +1,29 @@
-# Agent Instructions — GitHub for ADO Developers Demo
+# AGENTS.md
 
-## Project Purpose
+## Repository Purpose
 
-This repo contains a single-file demo script ([README.md](README.md)) for a **90-minute live workshop** that onboards Azure DevOps (ADO) developers to GitHub. There is no application code, build system, or test suite.
+- This repository currently centers on a single demo script in [README.md](README.md).
+- The content is for a GitHub-for-Azure-DevOps presentation and workshop, not an application codebase.
+- Treat documentation accuracy, link correctness, and session flow consistency as the primary quality bar.
 
-## Repository Structure
+## Source Of Truth
 
-```
-README.md   # The complete demo script (the only file that matters)
-AGENTS.md   # This file
-```
+- Use [README.md](README.md) as the authoritative outline for the session agenda, demos, setup, and prep checklist.
+- Prefer linking to existing documentation instead of copying its content into new customization files.
+- If you add supporting assets such as `.github/PULL_REQUEST_TEMPLATE.md`, `.github/CODEOWNERS`, or workflow files, keep them aligned with the checklist and examples already described in [README.md](README.md).
 
-## Content Conventions
+## How To Work In This Repo
 
-- **ADO comparisons are mandatory**: every GitHub feature shown must include a "Compare: In ADO this is…" callout. Never remove or weaken these comparisons.
-- **Key callouts** use the `**Key callout**:` prefix and highlight what's unique or surprising vs. ADO.
-- **Section structure**: Sections are numbered (1.1, 1.2, …). Each has a **Goal**, numbered steps, and optional sub-bullets.
-- **Presenter attribution**: Each demo block is tagged `(Presenter A, N min)` or `(Presenter B, N min)` or `(Both, N min)`. Keep timing totals consistent with the Timing Guide table at the end of the README.
-- **Markdown code blocks** inside the script represent files the presenter will create or display (e.g., PR templates, CODEOWNERS). Use triple-backtick fences with the appropriate language tag.
+- Expect documentation edits more often than code changes.
+- Preserve the existing section structure, presenter assignments, timing guidance, and GitHub versus ADO comparisons unless the task explicitly changes them.
+- When updating examples, keep URLs, repository names, issue references, and branch names internally consistent across the document.
+- Do not invent build, test, or runtime steps: there are no verified project commands in the current repository state.
 
-## Key Facts
+## Validation
 
-- **Total duration**: 90 minutes (see the Timing Guide table in README.md).
-- **Demo repo**: hosted at `github.com/yortch/` — referenced URLs in the script are examples for presenters to adapt.
-- **ADO reference**: `https://dev.azure.com/octodemo-msft/msft-common-demos-adogh-crispy-carnival/`
-- **Audience**: ADO users who are new to GitHub — assume familiarity with ADO concepts (Repos, Pipelines, Boards, PRs, Policies) but no GitHub knowledge.
+- Validate changes by checking Markdown structure, internal consistency, and referenced file paths.
+- If new demo assets are added, update [README.md](README.md) so the preparation checklist and demo steps still match the repository contents.
 
-## Editing Guidelines
+## Useful Starting Points
 
-- When adding a new demo step, follow the existing numbered-list format and include an ADO comparison.
-- When adding a new section, update the **Timing Guide table** with the correct duration and presenter column.
-- Do not add application code, CI workflows, or other files unless the user explicitly requests them.
-- External documentation should be **linked, not copied** (see the Resources section at the bottom of README.md for the canonical links).
+- Session script and prep checklist: [README.md](README.md)
